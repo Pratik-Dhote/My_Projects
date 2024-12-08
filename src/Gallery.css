@@ -1,0 +1,104 @@
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px;
+  padding: 15px 0;
+}
+
+.gallery-item {
+  width: calc(33.333% - 20px); /* 3 items per row with spacing */
+  box-sizing: border-box;
+}
+
+.image-frame {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%; /* 1:1 Aspect Ratio */
+  overflow: hidden;
+  margin-bottom: 50px;
+  border-radius: 20px;
+}
+
+.image-frame img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-frame:hover img {
+  transform: scale(1.1);
+}
+
+/* Frame styles */
+
+.frame-1 .image-frame {
+  border-radius: 10px; /* Rounded square */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.frame-2 .image-frame {
+  border-radius: 10px; /* Circle */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .gallery-item {
+    width: calc(50% - 20px); /* 2 items per row for larger tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-item {
+    width: calc(50% - 20px); /* 2 items per row for smaller tablets */
+  }
+}
+
+@media (max-width: 992px) {
+  .gallery-container {
+    margin-left: 20px; /* Adjust margin for mobile devices */
+  }
+
+  .gallery-item {
+    width: calc(100% - 20px); /* 1 item per row for mobile devices */
+  }
+  .gallery-container{
+    margin-top: 50px;
+  }
+  .gallery-title{
+    margin-top: 80px !important;
+  }
+}
+
+.gallery-title {
+  text-align: center;
+  font-size: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  color: #886913; /* Light mode text color */
+}
+
+.dark-mode .gallery-title {
+  color: #fff; /* Dark mode text color */
+}
+
+
+.gallery-underline {
+  width: 85px;
+  height: 4px;
+  background-color:#29cac8; /* Light mode underline color */
+  margin: 0 auto 40px;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+.dark-mode .gallery-underline {
+  background-color: #fff; /* Dark mode underline color */
+}
+

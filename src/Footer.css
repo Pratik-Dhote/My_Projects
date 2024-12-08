@@ -1,0 +1,76 @@
+.footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  animation: fadeInUp 1s;
+  position: relative;
+  padding-bottom: 40px;
+  flex-wrap: wrap; /* Ensures items wrap on small screens */
+}
+
+.footer-section {
+  max-width: 200px;
+  margin: 10px; /* Adds spacing between sections */
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section a {
+  color: rgb(179, 135, 24);
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.footer-section a:hover {
+  color: rgb(112, 191, 196);
+  text-decoration: none;
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.footer-section h5 {
+  color: rgb(116, 215, 222);
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column; /* Stack sections vertically on small screens */
+    align-items: center; /* Center the sections */
+    text-align: center; /* Center the text */
+  }
+
+  .footer-section {
+    max-width: none; /* Remove max-width to allow sections to expand */
+    width: 100%; /* Make each section take full width */
+    margin: 10px 0; /* Add margin for spacing */
+  }
+
+  .footer-section ul {
+    padding: 0; /* Remove padding for a cleaner look */
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 10px; /* Reduce padding for very small screens */
+  }
+
+  .footer-section a {
+    font-size: 1em; /* Reduce font size for small screens */
+  }
+}

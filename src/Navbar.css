@@ -1,0 +1,247 @@
+ 
+  .btn-outline-secondary {
+    margin-right: 10px; /* Add some margin to the right */
+  }
+  
+  .dark-mode .custom-navbar {
+    background-color: #333 !important;
+    color: white;
+  }
+  
+  .dark-mode .navbar-nav .nav-link {
+    color:white!important;
+  }
+  
+  .dark-mode .navbar-nav .dropdown-menu {
+    background-color:white;
+    color: white;
+    border-radius: 10px;
+  }
+  
+  .dark-mode .btn-outline-secondary {
+    color: white;
+    border-color: white;
+  }
+  
+ .dark-mode .navbar-toggle{
+    color: white;
+    background-color: #140e0e;
+    border-color: #140e0e;
+ }
+  
+ .dark-mode .nav-link-custom {
+    color:white;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  .nav-link-custom:hover, .link:hover {
+    color: #eff1e9; /* Change to red on hover */
+    background-color: rgb(65, 183, 183);
+    border-radius: 10px;
+    padding: 3px 9px;
+  }
+
+  .nav-link-custom {
+    color:rgb(14, 14, 13); /* Change to red on hover */
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    
+  }
+
+  
+
+   .social-media-icons a {
+    color: #333;
+    margin-right: 15px;
+    font-size: 1.0em;
+    transition: color 0.3s ease;
+   
+  }
+  
+  .dark-mode .social-media-icons a {
+    color: #fff;
+    
+  }
+  
+  .social-media-icons a:hover {
+    color: #9af4e3e4;
+  }
+  
+  .dark-mode .social-media-icons a:hover {
+    color: #2565d4e4;
+  }
+
+
+  #basic-nav-dropdown{
+    color: rgb(15, 15, 15); /* Change to red on hover */
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+   
+  }
+
+  #basic-nav-dropdown:hover{
+    color: #eff1e9; /* Change to red on hover */
+    background-color: rgb(65, 183, 183);
+    border-radius: 10px;
+    padding: 3px 9px;
+  }
+  .navbar-nav .dropdown-menu{
+    border-radius: 10px;
+  }
+
+
+
+
+.nav-item a {
+  color: rgb(224, 33, 147);
+
+}
+
+.nav-item a:hover,
+.nav-item a:focus,
+.nav-item a:active {
+  color: #d6fe5d; /* Change this to your desired hover color */
+  border-radius: 9px;
+  background-color:#68aebcf1 ;/* Change this to your desired background color on hover */
+}
+
+
+
+.custom-navbar {
+  width: 100%;
+  font-size: 19px;
+  background-color: #89d3d5; /* Ensure navbar has a background */
+  box-shadow: 0 2px 4px rgba(21, 20, 20, 0.1); /* Add subtle shadow */
+}
+
+.navbar-logo {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.navbar-toggle {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+ 
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 993px) {
+  .custom-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .navbar-logo {
+    text-align: left;
+    margin-left: 20px;
+  }
+
+  .navbar-right {
+    display: flex;
+    align-items: center;
+  }
+  .dark-mode-btn {
+    display: inline-block;
+    order: 2;
+  }
+
+  .social-media-icons {
+    margin: 0 15px;
+  }
+  .mobile-header{
+   order: 1;
+  }
+  .mr-auto{
+    margin-left: 35%;
+  }
+}
+
+/* Mobile specific styles */
+@media (max-width: 992px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar-logo {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #3f7d89;
+    text-align: center;
+    animation: slideIn 0.3s forwards;
+    
+  }
+
+  .navbar-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } 
+  
+  .nav-item{
+    text-align: center !important;
+  }
+
+  .mobile-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 15px;
+    order: 1;
+  }
+
+  .navbar-toggle {
+    display: block;
+    order: 1;
+  }
+
+  .social-media-icons {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+    order: 2;
+    font-size: 0.8em;
+  }
+
+  .dark-mode-btn {
+    display: none  !important;
+  }
+
+  
+  
+}
+
+.navbar-collapse.collapsing {
+  animation: slideOut 0.3s forwards;
+}
+
+.navbar .nav-link-custom::after, 
+.navbar .dropdown-toggle::after {
+  display: none !important;
+}
+
+
